@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+:root {
+  --main-color: #f53838;
+  --phar-color: #4f5665;
+  --text-color: #0b132a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.classFlex {
+  display: flex;
+}
+span {
+  display: inline-block;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  outline: none;
+  cursor: pointer;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+/* ///// Header /////*/
+nav {
+  max-width: 100%;
+  height: 7rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-logo {
+  padding-right: 40rem;
+}
+.nav-logo img:first-child {
+  margin-bottom: -1rem;
+}
+.nav-logo img:last-child {
+  margin-left: 1rem;
+}
+.nav-links ul {
+  margin-left: -35rem;
+  display: flex;
+  gap: 3rem;
+}
+.nav-links ul li a {
+  color: #4f5665;
+  font-family: "Rubik", sans-serif;
+}
+.nav-links ul li a:hover {
+  text-decoration: underline;
+  color: var(--main-color);
+}
+.nav-btns button:first-child {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background-color: transparent;
+}
+.nav-btns button:last-child {
+  border: 1px solid var(--main-color);
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  background-color: transparent;
+  color: #f53855;
+  transition: all 0.1s linear;
+}
+.nav-btns button:last-child:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: all 0.1s linear;
+}
+.home-text {
+  padding: 10rem;
+}
+.home-text h1 {
+  font-family: "Rubik", sans-serif;
+  width: 45rem;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 5rem;
+}
+.home-text span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+}
+.home-text p {
+  font-family: "Rubik", sans-serif;
+  width: 46.6rem;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+.home-text button {
+  font-family: "Rubik", sans-serif;
+  border-radius: 1rem;
+  background: #f53838;
+  padding: 1.7rem 6.5rem;
+  border: none;
+  color: #fff;
+  margin-top: 4rem;
+  font-weight: 900;
+  box-shadow: 0px 10px 40px -5px var(--main-color);
+  transition: 0.3s linear;
+}
+.home-text button:hover {
+  transform: translateY(-1rem);
+  transition: 0.3s linear;
+}
+.home-img img {
+  position: relative;
+  left: -25%;
+  top: 15%;
+  width: 60rem;
+}
+.home-bottom {
+  margin-top: 10rem;
+}
+.cards {
+  width: 80%;
+  height: 12rem;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0px 20px 50px -50px var(--text-color);
+}
+.card1 {
+  border-right: 1px solid #cfcfd0;
+  padding-right: 5rem;
+  display: flex;
+}
+.card1:last-child {
+  border: none;
+}
+.card1 img {
+  background-color: #ffecec;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-right: 4rem;
+}
+.card1 h3 {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+  line-height: 3rem;
+}
+.card1 span {
+  position: absolute;
+  color: #4f5665;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+  margin-top: 3rem;
+  margin-left: 7rem;
+}
+.card1 .myspan1 {
+  margin-left: 8.5rem;
+}
+.card1 .myspan2 {
+  margin-left: 8rem;
+}
+
+/* ////// Features section ///// */
+
+.features {
+  margin-top: 10rem;
+}
+.features-img img {
+  width: 45rem;
+  margin-right: 5rem;
+}
+.features-text h2 {
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 5rem;
+  width: 40rem;
+}
+.features-text * {
+  margin-top: 1rem;
+}
+.features-text p {
+  color: #4f5665;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+}
+.features-text ul li {
+  color: var(--phar-color);
+  font-size: 1.4rem;
+  font-family: "Rubik";
+  line-height: 3rem;
+}
+.features-text ul li img {
+  margin-right: 1rem;
+  margin-bottom: -0.5rem;
+}
+
+/* ///// Pricing section ///// */
+
+.pricing {
+  margin-top: 10rem;
+}
+.pricing-head {
+  text-align: center;
+}
+.pricing-head h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+  line-height: 5rem;
+}
+.pricing-head p {
+  margin: 0 auto;
+  width: 55rem;
+  color: var(--phar-color);
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+}
+.myflex1 {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box {
+  padding: 5rem;
+  width: 25rem;
+  height: 68rem;
+  box-shadow: 0 0 13px -10px black;
+  border-radius: 1rem;
+  margin-top: 7rem;
+}
+.box h4 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-top: 4rem;
+}
+.box ul li {
+  color: var(--phar-color);
+  font-size: 1.1rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+}
+.box ul li img {
+  margin-right: 1rem;
+}
+.box h3 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.box .mybtn {
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  border: 2px solid var(--main-color);
+  background-color: transparent;
+  color: var(--main-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  transition: 0.1s linear;
+}
+.box .mybtn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: 0.1s linear;
+}
+.mybtn3 {
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  border: 2px solid var(--main-color);
+  background-color: transparent;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  background-color: var(--main-color);
+  box-shadow: 0px 10px 40px -5px var(--main-color);
+  border: none;
+}
+.mytxt1 {
+  margin-top: 13rem;
+}
+.mytxt2 {
+  margin-top: 9.5rem;
+}
+.mytxt3 {
+  margin-top: 6rem;
+}
+
+/* ///// Map section ///// */
+
+.map {
+  margin-top: 10rem;
+}
+.map-head {
+  text-align: center;
+}
+.map-head h1 {
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 5rem;
+  width: 35rem;
+  margin: 0 auto;
+}
+.map-head p {
+  margin: 0 auto;
+  width: 50rem;
+  color: var(--phar-color);
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+}
+.map-img img {
+  width: 90em;
+  margin-left: 14rem;
+  margin-top: 13rem;
+  margin-bottom: 10rem;
+}
+.imges img {
+  width: 80%;
+  margin-left: 10rem;
+}
+
+/* ///// Help section ///// */
+
+.help {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.help-head {
+  text-align: center;
+}
+.help-head h1 {
+  width: 40rem;
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 5rem;
+  margin: 0 auto;
+}
+.help-head p {
+  width: 45rem;
+  color: var(--phar-color);
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+  margin: 0 auto;
+}
+.card2 {
+  margin-top: 1rem;
+}
+.myflex2 {
+  justify-content: space-evenly;
+  gap: 3rem;
+  align-items: center;
+  padding: 8rem;
+  position: relative;
+}
+.nth-cards {
+  position: relative;
+  width: 30rem;
+  height: 19rem;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.myimg3 {
+  position: absolute;
+  top: 85%;
+  left: 90%;
+}
+b {
+  position: absolute;
+  top: 82%;
+  left: 78%;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+}
+.nth-cards h6 {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3rem;
+  font-weight: 900;
+}
+.nth-cards span {
+  position: absolute;
+  left: 33%;
+  top: 26%;
+  color: var(--phar-color);
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+}
+.nth-cards p {
+  position: absolute;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.divs {
+  display: flex;
+  gap: 1rem;
+  margin: 0 8rem;
+}
+.points {
+  width: 1rem;
+  height: 1rem;
+  background-color: #dde0e4;
+  border-radius: 50%;
+}
+.point1 {
+  width: 5rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: var(--main-color);
+}
+.arrows {
+  position: absolute;
+  top: 13%;
+  left: 90%;
+  z-index: 10;
+  display: flex;
+  justify-content: right;
+  visibility: hidden;
+  gap: 2rem;
+}
+.arrows img {
+  padding: 1rem;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  margin-left: -10rem;
+  cursor: pointer;
+}
+.arrows svg {
+  font-size: 5.5rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.channel-card {
+  width: 80%;
+  height: 20rem;
+  box-shadow: 0px 10px 35px -20px gray;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.channel-left {
+  padding: 5rem;
+}
+.channel-left h1 {
+  width: 35rem;
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+  line-height: 4.5rem;
+}
+.channel-left p {
+  color: var(--phar-color);
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+}
+.channel-card button {
+  font-family: "Rubik", sans-serif;
+  border-radius: 1rem;
+  background: #f53838;
+  padding: 1.7rem 5rem;
+  border: none;
+  color: #fff;
+  margin-top: 8rem;
+  margin-right: 5rem;
+  font-weight: 900;
+  box-shadow: 0px 10px 40px -5px var(--main-color);
+  transition: 0.3s linear;
+}
+.channel-card button:hover {
+  transform: translateY(-1rem);
+  transition: 0.3s linear;
+}
+
+/* ///// Foooter ///// */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  background-color: #f8f8f8;
+  margin-top: -15rem;
+  z-index: -1;
+}
+.footer-left {
+  padding: 1rem 8rem;
+}
+.footer-left * {
+  padding-top: 2rem;
+}
+.footer-left p {
+  width: 28rem;
+  color: var(--phar-color);
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.footer-left span {
+  margin-bottom: 1rem;
+  margin-left: -22rem;
+  color: #afb5c0;
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 3rem;
+}
+.myLogo {
+  margin-bottom: -1rem;
+  margin-right: 0.5rem;
+}
+.myFlex4 {
+  position: absolute;
+  margin-top: 10rem;
+  gap: 20rem;
+}
+.footer-right {
+  gap: 5rem;
+  margin-left: -10rem;
+}
+.footer-right ul strong {
+  margin-top: -2rem;
+}
+.footer-right ul * {
+  padding-top: 1.5rem;
+}
+.footer-right ul li {
+  cursor: pointer;
+}
